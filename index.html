@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Kế Trực - UIT</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        header {
+            display: flex;
+            align-items: center; /* Căn chỉnh ảnh và tên cùng một dòng */
+            gap: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 180px;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 225px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            padding: 5px;
+            background-color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+        
+        .header-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+            text-align: center;
+            white-space: nowrap; /* Thêm dòng này để ngăn tên bị ngắt dòng */
+            font-size: 1.4em; /* Đã thay đổi kích thước chữ */
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .university {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            margin-top: 10px;
+            width: 100%;
+        }
+        
+        .university-logo {
+            height: 50px;
+            margin-top: 5px;
+        }
+        
+        section {
+            margin: 20px 0;
+        }
+        
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background-color: #3498db;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            header {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 190px;
+            }
+            
+            .university-logo {
+                height: 40px;
+            }
+            
+            .profile-container {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-container">
+                <img src="https://i.imgur.com/Ntc3ZoU.jpeg" alt="Nguyễn Kế Trực" class="profile-img">
+                <h1>Nguyễn Kế Trực</h1>
+            </div>
+            <div class="header-content">
+                <div class="university">
+                    <h2 class="subtitle">Trường Đại học Công nghệ Thông tin</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Logo_UIT_updated.svg/1200px-Logo_UIT_updated.svg.png" alt="UIT Logo" class="university-logo">
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <h2>Giới Thiệu</h2>
+            <p>Xin chào! Tôi là Nguyễn Kế Trực, hiện đang là sinh viên năm nhất tại Trường Đại học Công nghệ Thông tin - Đại học Quốc gia TP.HCM.</p>
+        </section>
+        
+        <section>
+            <h2>Kỹ Năng</h2>
+            <div class="skills">
+                <span class="skill">C++</span>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Học Vấn</h2>
+            <p><strong>Trường Đại học Công nghệ Thông tin - ĐHQG TP.HCM</strong></p>
+            <p>Chuyên ngành: An toàn thông tin</p>
+        </section>
+        
+        <section>
+            <h2>Liên Hệ</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="icon">
+                    <span>Email: nguyenketruc@gmail.com</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        &copy; 2023 Nguyễn Kế Trực - UIT. All rights reserved.
+    </footer>
+</body>
+</html>
